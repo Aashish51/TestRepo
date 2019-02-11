@@ -25,6 +25,7 @@ namespace SeeLogic.SurveyResponseOpportunity
 
             try
             {
+                // Entity get
                 Entity entity = (Entity)context.InputParameters["Target"];
 
                 string surveyName = entity.GetAttributeValue<string>("msdyn_name");
